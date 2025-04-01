@@ -35,5 +35,5 @@ def list_for_func():
         print(f"列表的元素有：{element}")
 
 
-# list_while_func()
-list_for_func()
+list_while_func()
+# list_for_func()
