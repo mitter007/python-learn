@@ -15,4 +15,5 @@ def add(x, y):
 
 
 test_func(add)
+print("********************************")
 test_func(lambda x, y: x + y)

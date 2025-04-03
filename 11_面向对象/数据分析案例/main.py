@@ -22,7 +22,7 @@ feb_data: list[Record] = json_file_reader.read_data()
 all_data: list[Record] = jan_data + feb_data
 
 # 开始进行数据计算
-# {"2011-01-01": 1534, "2011-01-02": 300, "2011-01-03": 650}
+# {"2011-01.py-01.py": 1534, "2011-01.py-02": 300, "2011-01.py-03": 650}
 data_dict = {}
 for record in all_data:
     if record.date in data_dict.keys():
