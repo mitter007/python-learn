@@ -31,9 +31,10 @@ class Player(object):
 
 mia = Player('mia',24,'湖北','青铜')
 mia.show()
+print(mia.level_up) # <bound method Player.level_up of <__main__.Player object at 0x000001E06E32BFA0>>
 Player.get_players()
 
-
+print('*' * 80)
 
 
 class weapon(object):
@@ -67,6 +68,7 @@ class weapon(object):
 
 
     def show_weapon(self):
+        print( self.__dict__)
         for k,v in self.__dict__.items():
             print(k,v)
 

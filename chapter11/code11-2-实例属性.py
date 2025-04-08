@@ -11,6 +11,8 @@ tom.height = 180
 tom.age = 32
 print(tom.__dict__) # 获取实例（对象）的所有属性
 
+print('* '*50)
+
 # 武器： 名字 攻击值 等级
 class weapon(object):
     def __init__(self,name,damage,level):
@@ -20,3 +22,15 @@ class weapon(object):
 
 gun = weapon('magic',1000,3)
 print(gun.__dict__)
+
+print('* '*50)
+
+class Gun(object):
+    def __init__(self,name,count,bullet):
+        self.name = name
+        self.count = count
+        self.bullet = bullet
+gun1=Gun('枪',200,12)
+
+gun.model=3
+print(gun.__dict__)  # {'name': 'magic', 'damage': 1000, 'level': 3, 'model': 3}

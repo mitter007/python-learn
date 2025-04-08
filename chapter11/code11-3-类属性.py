@@ -11,7 +11,7 @@ print(mia.__dict__)
 print('欢迎荣耀王者的第 %d 个玩家注册！' % Player.numbers)
 tom = Player('tom',32,'重庆')
 print('欢迎荣耀王者的第 %d 个玩家注册！' % Player.numbers)
-
+print('* '* 80)
 class weapon(object):
     numbers = 0
     max_damage = 10000

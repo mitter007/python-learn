@@ -18,6 +18,8 @@ def user_info(name, age, gender):
 user_info('小天', 13, '男')
 
 
+
+
 # 不定长 - 位置不定长, *号
 # 不定长定义的形式参数会作为元组存在，接收不定长数量的参数传入
 def user_info(*args):

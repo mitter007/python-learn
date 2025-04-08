@@ -5,6 +5,8 @@ class Player(object):
         self.name = name  # 实例属性
         self.age = age
         self.city = city
+
+        #  in 运算符用于检查某个元素是否存在于一个可迭代对象中。如果元素存在，则返回 True，否则返回 False。
         if level not in Player.levels:
             raise Exception('段位设置错误！')
         else:
@@ -47,7 +49,9 @@ class weapon(object):
             print(k,v)
 
 
-
+# l=Player() # TypeError: Player.__init__() missing 4 required positional arguments: 'name', 'age', 'city', and 'level'
+# print(l)
+print('*' * 80)
 mia = Player('mia',24,'大连','青铜')
 mia.show()
 mia.level_up()
@@ -62,4 +66,7 @@ mia.level_up()
 mia.show()
 gun = weapon('magic_gun',1000,'青铜')
 mia.get_weapon(gun)
+
+print('*' * 80)
+
 mia.show_weapon()
